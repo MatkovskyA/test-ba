@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'circe';
+  src: url(./src/fonts/circe_bold.ttf) format('truetype'),
+  url(./src/fonts/circe_bold.woff) format('woff'),
+  url(./src/fonts/circe_bold.woff2) format('woff2');
+}
+
+body {
+  font-family: 'circe', sans-serif;
+}

@@ -3,12 +3,23 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'circe';
+  font-family: 'circe-bold';
   src: url(./src/fonts/circe_bold.ttf) format('truetype'),
   url(./src/fonts/circe_bold.woff) format('woff'),
   url(./src/fonts/circe_bold.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'circe';
+  src: url(./src/fonts/circe_light.ttf) format('truetype'),
+  url(./src/fonts/circe_light.woff) format('woff'),
+  url(./src/fonts/circe_light.woff2) format('woff2');
+}
+
 body {
+  font-family: 'circe-bold', sans-serif;
+}
+
+button {
   font-family: 'circe', sans-serif;
 }

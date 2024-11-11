@@ -596,6 +596,10 @@ video {
   position: absolute;
 }
 
+.bottom-\[-378px\] {
+  bottom: -378px;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -637,20 +641,12 @@ video {
   height: 100vh;
 }
 
-.max-h-\[\] {
-  max-height: ;
-}
-
-.max-h-\[10\] {
-  max-height: 10;
-}
-
-.max-h-\[100\] {
-  max-height: 100;
-}
-
 .max-h-\[1000px\] {
   max-height: 1000px;
+}
+
+.min-h-\[378px\] {
+  min-height: 378px;
 }
 
 .w-full {
@@ -665,16 +661,41 @@ video {
   max-width: 36rem;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .content-center {
   align-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
+}
+
+.bg-\[\#3865A7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 101 167 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FE5F5F\] {
@@ -689,6 +710,10 @@ video {
 
 .bg-\[url\(\'\.\/src\/images\/bg\.png\'\)\] {
   background-image: url('./src/images/bg.png');
+}
+
+.bg-\[url\(\'\.\/src\/images\/bg1\.png\'\)\] {
+  background-image: url('./src/images/bg1.png');
 }
 
 .bg-cover {
@@ -723,16 +748,59 @@ video {
   padding-bottom: 35px;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pt-\[100px\] {
   padding-top: 100px;
 }
 
-.text-\[32px\] {
-  font-size: 32px;
+.pt-\[82px\] {
+  padding-top: 82px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-\[30px\] {
+  font-size: 30px;
 }
 
 .text-\[35px\] {
   font-size: 35px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {
@@ -749,14 +817,30 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[l\] {
+  color: l;
+}
+
 @font-face {
-  font-family: 'circe';
+  font-family: 'circe-bold';
 
   src: url(./src/fonts/circe_bold.ttf) format('truetype'),
   url(./src/fonts/circe_bold.woff) format('woff'),
   url(./src/fonts/circe_bold.woff2) format('woff2');
 }
 
+@font-face {
+  font-family: 'circe';
+
+  src: url(./src/fonts/circe_light.ttf) format('truetype'),
+  url(./src/fonts/circe_light.woff) format('woff'),
+  url(./src/fonts/circe_light.woff2) format('woff2');
+}
+
 body {
+  font-family: 'circe-bold', sans-serif;
+}
+
+button {
   font-family: 'circe', sans-serif;
 }

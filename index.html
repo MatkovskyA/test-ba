@@ -7,8 +7,8 @@
   <title>Мой бизнес</title>
 </head>
 <body>
-  <header class="fixed top-0 left-0 w-full z-50" >
-    <div class="max-w-5xl py-[35px] flex mx-auto justify-between px-3 bg-white">
+  <header class="fixed top-0 left-0 w-full z-50 px-3 bg-white" >
+    <div class="max-w-5xl py-[35px] flex mx-auto justify-between">
       <div class="flex content-center">
           <button class="text-white bg-[#FE5F5F] py-2 px-7 rounded-3xl mr-7">Личный кабинет</button>
           <button class="text-bold">Каталог услуг</button>
@@ -21,7 +21,7 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="min-h-screen">
     <section id="hero">
       <div class="absolute top-0 left-0 w-full z-0 bg-center bg-[url('./src/images/bg.png')] bg-cover bg-center bg-no-repeat h-[1000px]"></div>
       <div class="max-w-5xl mx-auto pt-[100px] px-3 min-h-[1000px]" >
@@ -84,11 +84,29 @@
         </div>
       </div>
     </section>  
+    <section id="succes" class="max-w-5xl mx-auto pt-[100px] px-3 flex flex-col justify-center items-center">
+      <div class="flex justify-center items-center gap-3 mb-[97px]">
+        <img src="./src/icons/Vector.svg" alt="Icon">
+        <h2 class="section-title text-[40px]"> Истории успеха </h2>
+        <img src="./src/icons/Vector.svg" alt="Icon">
+      </div>
+      <div>
 
+      </div>
+    </section>
   </main>
-  <footer>
-    <div class="container">
-
+  <footer class="bg-customGray text-white py-[30px]">
+    <div class="flex gap-9 max-w-5xl mx-auto justify-between">
+      <ul class="flex gap-3">
+        <li><a href="#">Услуги  и поддержка</a></li>
+        <li><a href="#">Сервисы для бизнеса</a></li>
+        <li><a href="#">Общая информация </a></li>
+        <li><a href="#">Защита бизнеса</a></li>
+      </ul>
+      <ul class="flex gap-3">
+        <li><a href="#">service@in-line.ru</a></li>
+        <li><a href="#"> 8-800-200-74-30</a></li>
+      </ul>
     </div>
   </footer>
 </body>

@@ -7,41 +7,83 @@
   <title>Мой бизнес</title>
 </head>
 <body>
-  <header class="fixed top-0 left-0 w-full z-10" >
+  <header class="fixed top-0 left-0 w-full z-50" >
     <div class="max-w-5xl py-[35px] flex mx-auto justify-between px-3 bg-white">
       <div class="flex content-center">
           <button class="text-white bg-[#FE5F5F] py-2 px-7 rounded-3xl mr-7">Личный кабинет</button>
-          <button class="font-bold">Каталог услуг</button>
+          <button class="text-bold">Каталог услуг</button>
       </div>
       <div class="flex content-center">
         <div class="flex content-center mr-[15px]">
           <img src="./src/icons/1.svg" alt="Icon">
         </div>
-        <button class="text-[#FE5F5F] font-bold">Онлайн помощник</button>
+        <button class="text-[#FE5F5F] text-bold">Онлайн помощник</button>
       </div>
     </div>
   </header>
   <main>
-    <section id="hero" class="absolute top-0 left-0 w-full z-9 bg-center bg-[url('./src/images/bg.png')] bg-cover bg-center h-screen bg-no-repeat max-h-[1000px]" >
-      <div class="max-w-5xl mx-auto pt-[100px] px-3" >
+    <section id="hero">
+      <div class="absolute top-0 left-0 w-full z-0 bg-center bg-[url('./src/images/bg.png')] bg-cover bg-center bg-no-repeat h-[1000px]"></div>
+      <div class="max-w-5xl mx-auto pt-[100px] px-3 min-h-[1000px]" >
         <div class="mt-4 mb-[63px]">
           <img src="./src/icons/logo.svg" alt="Logo">
         </div>
         <h2 class="font-bold text-[35px] max-w-xl">Мой бизнес - цифровая платформа для тех, кто хочет открыть и развивать свой бизнес</h2>
       </div>
-      <div class="questions bg-[url('./src/images/bg1.png')] bg-cover bg-center bg-no-repeat min-h-[378px] absolute bottom-[-378px] left-0 w-full">
-        <div class="text-center max-w-5xl mx-auto flex flex-col justify-center items-center gap-9">
+      <div class="bg-[url('./src/images/bg1.png')] bg-cover bg-center bg-no-repeat min-h-[378px] w-full">
+        <div class="text-center max-w-5xl mx-auto flex flex-col justify-center items-center gap-9 px-3">
           <h3 class="center font-bold text-[30px] max-w-xl pt-[82px]">Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес? </h3>
-          <div class="flex">
-            <button class="text-2xl text-white bg-[#FE5F5F] py-3 px-10 rounded-3xl mr-7">Да, у меня уже есть бизнес</button>
+          <div class="flex flex-wrap justify-center items-center gap-7">
+            <button class="text-2xl text-white bg-[#FE5F5F] py-3 px-10 rounded-3xl">Да, у меня уже есть бизнес</button>
             <button class="text-2xl text-white bg-[#3865A7] py-3 px-10 rounded-3xl">Нет, но планирую открыть</button>
           </div>
         </div>
       </div>
     </section>
-    <section id="">
-
-    </section>
+    <section id="advantages" class="max-w-5xl mx-auto pt-[100px] px-3 flex flex-col justify-center items-center" >
+      <div class="flex justify-center items-center gap-3 mb-[97px]">
+        <img src="./src/icons/Vector.svg" alt="Icon">
+        <h2 class="section-title text-[40px]"> Преимущества </h2>
+        <img src="./src/icons/Vector.svg" alt="Icon">
+      </div>
+      <div class="flex justify-center items-center gap-[100px] flex-wrap">
+        <div class="flex justify-center items-center flex-col gap-2">
+          <div class="relative bg-center bg-[url('./src/icons/icon333.svg')] bg-cover bg-center bg-no-repeat w-[152px] h-[133px]">
+            <img class="absolute left-[68px] top-5 z-20" src="./src/icons/icon33.svg" alt="Icon" />
+            <img class="absolute left-5 top-8 z-10" src="./src/icons/icon3.svg" alt="Icon" />
+          </div>
+          <div class="text-[50px] text-sky-700">
+            482
+          </div>
+          <div class="text-center max-w-[240px] text-xl">
+            Организаций поддержки по Российской Федерации
+          </div>
+        </div>
+        <div class="flex justify-center items-center flex-col gap-2">
+          <div class="relative bg-center bg-[url('./src/icons/icon44.svg')] bg-cover bg-center bg-no-repeat w-[152px] h-[133px]">
+            <img class="absolute left-[8px] top-0 z-20" src="./src/icons/icon4.svg" alt="Icon" />
+          </div>
+          <div class="text-[50px] text-sky-700">
+            5240
+          </div>
+          <div class="text-center max-w-[258px] text-xl">
+            Оказано услуг государственной поддержки          
+          </div>
+        </div>
+        <div class="flex justify-center items-center flex-col gap-2">
+          <div class="relative bg-center bg-[url('./src/icons/icon333.svg')] bg-cover bg-center bg-no-repeat w-[152px] h-[133px]">
+            <img class="absolute left-[68px] top-5 z-20" src="./src/icons/icon33.svg" alt="Icon" />
+            <img class="absolute left-5 top-8 z-10" src="./src/icons/icon3.svg" alt="Icon" />
+          </div>
+          <div class="text-[50px] text-sky-700">
+            1360
+          </div>
+          <div class="text-center max-w-[182px] text-xl">
+            Зарегестрировано участников проекта
+          </div>
+        </div>
+      </div>
+    </section>  
 
   </main>
   <footer>

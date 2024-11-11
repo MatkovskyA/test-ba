@@ -20,6 +20,10 @@ body {
   font-family: 'circe-bold', sans-serif;
 }
 
+.text-bold {
+  font-family: 'circe-bold', sans-serif;
+}
+
 button {
   font-family: 'circe', sans-serif;
 }

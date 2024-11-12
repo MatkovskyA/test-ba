@@ -743,6 +743,22 @@ video {
   margin-top: 1rem;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[40px\] {
+  margin-bottom: 40px;
+}
+
+.mb-\[57px\] {
+  margin-bottom: 57px;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
 .flex {
   display: flex;
 }
@@ -929,6 +945,10 @@ video {
   gap: 50px;
 }
 
+.gap-\[60px\] {
+  gap: 60px;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -1065,6 +1085,26 @@ video {
 
 .pt-\[40px\] {
   padding-top: 40px;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.pt-\[70px\] {
+  padding-top: 70px;
+}
+
+.pt-\[0px\] {
+  padding-top: 0px;
+}
+
+.pt-\[80px\] {
+  padding-top: 80px;
+}
+
+.pt-\[60px\] {
+  padding-top: 60px;
 }
 
 .text-center {
@@ -1217,6 +1257,14 @@ a:hover {
     margin-bottom: 176px;
   }
 
+  .md\:mb-\[97px\] {
+    margin-bottom: 97px;
+  }
+
+  .md\:mb-\[80px\] {
+    margin-bottom: 80px;
+  }
+
   .md\:block {
     display: block;
   }
@@ -1233,6 +1281,10 @@ a:hover {
     justify-content: space-between;
   }
 
+  .md\:gap-\[100px\] {
+    gap: 100px;
+  }
+
   .md\:py-\[35px\] {
     padding-top: 35px;
     padding-bottom: 35px;
@@ -1240,6 +1292,10 @@ a:hover {
 
   .md\:pt-\[82px\] {
     padding-top: 82px;
+  }
+
+  .md\:pt-\[100px\] {
+    padding-top: 100px;
   }
 
   .md\:text-2xl {
@@ -1257,7 +1313,15 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-\[63px\] {
+    margin-bottom: 63px;
+  }
+
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:pt-\[100px\] {
+    padding-top: 100px;
   }
 }

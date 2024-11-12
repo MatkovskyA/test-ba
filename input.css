@@ -31,3 +31,7 @@ body {
 button {
   font-family: 'circe', sans-serif;
 }
+
+a:hover {
+  color: rgb(252, 127, 127);
+}

@@ -8,17 +8,24 @@
 </head>
 <body>
   <header class="fixed top-0 left-0 w-full z-50 px-3 bg-white" >
-    <div class="max-w-5xl py-[35px] flex mx-auto justify-between">
-      <div class="flex content-center">
-          <button class="text-white bg-[#FE5F5F] py-2 px-7 rounded-3xl mr-7">Личный кабинет</button>
-          <button class="text-bold">Каталог услуг</button>
+    <div class="max-w-5xl py-4 md:py-[35px] flex mx-auto justify-between">
+      <div class="content-center hidden md:flex">
+          <button class="text-white bg-[#FE5F5F] py-2 px-7 rounded-3xl mr-7 hover:bg-[#FF7F7F] hover:shadow-lg transition duration-200">Личный кабинет</button>
+          <button class="text-bold transition-transform duration-300 transform hover:scale-105">Каталог услуг</button>
       </div>
+      <button class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
       <div class="flex content-center">
-        <div class="flex content-center mr-[15px]">
-          <img src="./src/icons/1.svg" alt="Icon">
-        </div>
-        <button class="text-[#FE5F5F] text-bold">Онлайн помощник</button>
+        <button class="flex justify-center items-center text-[#FE5F5F] text-bold transition-transform duration-300 transform hover:scale-105"><img class="mr-[15px]" src="./src/icons/1.svg" alt="Icon">Онлайн помощник</button>
       </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+      <button class="text-black">Каталог услуг</button>
+      <button class="text-black">Онлайн помощник</button>
+      <button class="text-white bg-[#FE5F5F] py-2 px-7 rounded-3xl">Личный кабинет</button>
     </div>
   </header>
   <main class="min-h-screen">
@@ -32,10 +39,10 @@
       </div>
       <div class="bg-[url('./src/images/bg1.png')] bg-cover bg-center bg-no-repeat min-h-[378px] w-full">
         <div class="text-center max-w-5xl mx-auto flex flex-col justify-center items-center gap-9 px-3">
-          <h3 class="center font-bold text-[30px] max-w-xl pt-[82px]">Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес? </h3>
+          <h3 class="center font-bold text-[24px] md:text-[30px] max-w-xl pt-[40px] md:pt-[82px]">Для начала работы ответьте на вопрос, есть ли у вас уже существующий бизнес? </h3>
           <div class="flex flex-wrap justify-center items-center gap-7">
-            <button class="text-2xl text-white bg-[#FE5F5F] py-3 px-10 rounded-3xl">Да, у меня уже есть бизнес</button>
-            <button class="text-2xl text-white bg-[#3865A7] py-3 px-10 rounded-3xl">Нет, но планирую открыть</button>
+            <button class="text-lg md:text-2xl text-white bg-[#FE5F5F] py-3 px-10 rounded-3xl hover:bg-[#FF7F7F] hover:shadow-lg transition duration-200">Да, у меня уже есть бизнес</button>
+            <button class="text-lg md:text-2xl text-white bg-[#3865A7] py-3 px-10 rounded-3xl hover:bg-[#4A83C1] hover:shadow-lg transition duration-200">Нет, но планирую открыть</button>
           </div>
         </div>
       </div>
@@ -43,7 +50,7 @@
     <section id="advantages" class="max-w-5xl mx-auto pt-[100px] px-3 flex flex-col justify-center items-center" >
       <div class="flex justify-center items-center gap-3 mb-[97px]">
         <img src="./src/icons/Vector.svg" alt="Icon">
-        <h2 class="section-title text-[40px]"> Преимущества </h2>
+        <h2 class="section-title text-[32px] md:text-[40px]"> Преимущества </h2>
         <img src="./src/icons/Vector.svg" alt="Icon">
       </div>
       <div class="flex justify-center items-center gap-[100px] flex-wrap">
@@ -83,20 +90,20 @@
         </div>
       </div>
     </section>  
-    <section id="succes" class="max-w-5xl mx-auto pt-[100px] px-3 flex flex-col justify-center items-center mb-[176px]">
+    <section id="succes" class="max-w-5xl mx-auto pt-[100px] px-3 flex flex-col justify-center items-center mb-[80px] md:mb-[176px]">
       <div class="flex justify-center items-center gap-3 mb-[97px]">
         <img src="./src/icons/Vector.svg" alt="Icon">
-        <h2 class="section-title text-[40px]"> Истории успеха </h2>
+        <h2 class="section-title text-[32px] md:text-[40px]"> Истории успеха </h2>
         <img src="./src/icons/Vector.svg" alt="Icon">
       </div>
-      <div class="flex flex-col gap-3">
-        <div class="flex justify-between items-center gap-[50px] mb-[80px] flew-wrap">
+      <div class="flex flex-col gap-3 items-center justify-center">
+        <div class="flex lg:justify-between justify-center items-center gap-[50px] mb-[80px] flex-wrap">
           <div class="relative bg-center bg-[url('./src/icons/decor1.svg')] bg-contain bg-center bg-no-repeat min-w-[251px] min-h-[240px]">
             <img class="absolute left-[5px] top-8 max-w-[211px] max-h-[236px]" src="./src/icons/foto1.png" alt="Icon" />
             <img class="absolute right-5 bottom-[50px]" src="./src/icons/decor11.svg" alt="Icon" />
             <img class="absolute left-[100px] top-[9px]" src="./src/icons/decor111.svg" alt="Icon" />
           </div>
-          <div class="max-w-xl mb-[15px]">
+          <div class="max-w-xl mb-[15px] min-w-[270px] flex md:block flex-col justify-center">
             <h3 class="mb-[22px] text-[24px]">Пекарня "Русские традиции"</h3>
             <div class="flex justify-center items-center mb-[15px]">
               <img src="./src/icons/decor0.svg" alt="Icon">
@@ -104,11 +111,11 @@
               <p class="text-[#FE5F5F]">Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».</p>
             </div>
             <p class="mb-[17px] text-regular">Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта. </p>
-            <button class="flex items-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px]">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
+            <button class="flex items-center justify-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px] hover:bg-[#4A83C1] hover:shadow-lg transition duration-200">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
           </div>
         </div>
-        <div class="flex justify-between items-center gap-[50px] mb-[80px]">
-          <div class="max-w-xl mb-[15px]">
+        <div class="flex lg:justify-between justify-center items-center gap-[50px] mb-[80px] flex-wrap-reverse">
+          <div class="max-w-xl mb-[15px] flex md:block flex-col justify-center">
             <h3 class="mb-[22px] text-[24px]">Автомастерская</h3>
             <div class="flex justify-center items-center mb-[15px]">
               <img src="./src/icons/decor0.svg" alt="Icon">
@@ -116,7 +123,7 @@
               <p class="text-[#FE5F5F]">Первые дни независимости. Когда не нужно рано вставать, когда не нужно отпрашиваться, что бы успеть съездить в магазин, когда удобно.</p>
             </div>
             <p class="mb-[17px] text-regular">Встреча в городе Н с моими будущими партнерами была плодотворной. Я не смог заснуть до пяти утра – не потому что не спалось, но потому что мысли о будущих перспективах просто взрывали мой мозг. </p>
-            <button class="flex items-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px]">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
+            <button class="flex items-center justify-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px] hover:bg-[#4A83C1] hover:shadow-lg transition duration-200">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
           </div>
           <div class="relative bg-center bg-[url('./src/icons/decor2.svg')] bg-contain bg-center bg-no-repeat min-w-[304px] min-h-[275px]">
             <img class="absolute left-[45px] top-6 w-[215px] h-[216px]" src="./src/icons/foto2.png" alt="Icon" />
@@ -124,38 +131,47 @@
             <img class="absolute left-[15px] bottom-[9px]" src="./src/icons/decor222.svg" alt="Icon" />
           </div>
         </div>
-        <div class="flex justify-between items-center gap-[50px]">
+        <div class="flex lg:justify-between justify-center items-center gap-[50px] flex-wrap">
           <div class="relative bg-center bg-[url('./src/icons/decor3.svg')] bg-contain bg-center bg-no-repeat min-w-[305px] min-h-[275px]">
             <img class="absolute left-[20px] top-4 w-[243px] max-h-[237px] " src="./src/icons/foto3.png" alt="Icon" />
             <img class="absolute left-2 top-[10px] rotate-[-45deg]" src="./src/icons/decor111.svg" alt="Icon" />
             <img class="absolute right-[14px] bottom-[80px] rotate-[165deg]" src="./src/icons/decor11.svg" alt="Icon" />
           </div>
-          <div class="max-w-xl mb-[15px]">
-            <h3 class="mb-[22px]">Салон красоты “Эмират”</h3>
+          <div class="max-w-xl mb-[15px] flex md:block flex-col justify-center">
+            <h3 class="mb-[22px] text-[24px]">Салон красоты “Эмират”</h3>
             <div class="flex justify-center items-center mb-[88px]">
               <img src="./src/icons/decor0.svg" alt="Icon">
               <img class="mr-5" src="./src/icons/decor0.svg" alt="Icon">
-              <p class="text-[#FE5F5F]">Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».</p>
+              <p class="text-[#FE5F5F]">Когда же появилась возможность открыть свой бизнес, я рассматривала различные варианты, изучала всевозможные направления.</p>
             </div>
-            <button class="flex items-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px]">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
+            <button class="flex items-center justify-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px] hover:bg-[#4A83C1] hover:shadow-lg transition duration-200">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
           </div>
         </div>
       </div>
     </section>
+    <section>
+      <div class="flex flex-col items-center justify-center bg-[url('./src/images/bg2.png')] bg-cover bg-center bg-no-repeat min-h-[300px] w-full">
+        <h2 class="text-[35px] mb-[7px]">Есть вопросы?</h2>
+        <span class="text-regular max-w-[263px] text-center mb-[29px]">Задайте интересующие вас вопросы онлайн помощнику</span>
+        <button class="flex items-center justify-center gap-2 text-bold text-white bg-[#FE5F5F] py-3 px-12 rounded-3xl hover:bg-[#FF7F7F] hover:shadow-lg transition duration-200"> <img src="./src/icons/decor-logo.svg" alt="icon"> Онлайн помощник
+        </button>
+      </div>
+    </section>
   </main>
-  <footer class="bg-customGray text-white py-[30px]">
-    <div class="flex gap-9 max-w-5xl mx-auto justify-between">
-      <ul class="flex gap-3">
+  <footer class="bg-customGray text-white py-[30px] px-3">
+    <div class="sm:flex text-center gap-9 max-w-5xl mx-auto md:justify-between justify-center">
+      <ul class="md:flex gap-3">
         <li><a href="#">Услуги  и поддержка</a></li>
         <li><a href="#">Сервисы для бизнеса</a></li>
         <li><a href="#">Общая информация </a></li>
         <li><a href="#">Защита бизнеса</a></li>
       </ul>
-      <ul class="flex gap-3">
+      <ul class="md:flex gap-3">
         <li><a href="mailto:service@in-line.ru">service@in-line.ru</a></li>
         <li><a href="tel:88002007430">8-800-200-74-30</a></li>
       </ul>
     </div>
   </footer>
 </body>
+
 </html>

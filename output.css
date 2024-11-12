@@ -594,6 +594,74 @@ video {
   top: 2rem;
 }
 
+.left-px {
+  left: 1px;
+}
+
+.left-\[0px\] {
+  left: 0px;
+}
+
+.left-\[-10px\] {
+  left: -10px;
+}
+
+.left-\[10px\] {
+  left: 10px;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.left-\[5px\] {
+  left: 5px;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.bottom-8 {
+  bottom: 2rem;
+}
+
+.bottom-\[\] {
+  bottom: ;
+}
+
+.bottom-\[30px\] {
+  bottom: 30px;
+}
+
+.bottom-\[50px\] {
+  bottom: 50px;
+}
+
+.top-\[50px\] {
+  top: 50px;
+}
+
+.left-\[\] {
+  left: ;
+}
+
+.left-\[100px\] {
+  left: 100px;
+}
+
+.top-\[0px\] {
+  top: 0px;
+}
+
+.top-\[5px\] {
+  top: 5px;
+}
+
+.top-\[9px\] {
+  top: 9px;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -683,6 +751,30 @@ video {
   height: 133px;
 }
 
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[240px\] {
+  height: 240px;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-\[226\] {
+  max-height: 226;
+}
+
+.max-h-\[226px\] {
+  max-height: 226px;
+}
+
+.max-h-\[236px\] {
+  max-height: 236px;
+}
+
 .min-h-\[1000px\] {
   min-height: 1000px;
 }
@@ -713,6 +805,18 @@ video {
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[px\] {
+  width: px;
+}
+
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[251px\] {
+  width: 251px;
 }
 
 .max-w-5xl {
@@ -761,6 +865,26 @@ video {
 
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-\[\] {
+  max-width: ;
+}
+
+.max-w-\[1\] {
+  max-width: 1;
+}
+
+.max-w-\[191\] {
+  max-width: 191;
+}
+
+.max-w-\[191px\] {
+  max-width: 191px;
+}
+
+.max-w-\[211px\] {
+  max-width: 211px;
 }
 
 .flex-col {
@@ -815,6 +939,22 @@ video {
   border-radius: 1rem;
 }
 
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-\[\] {
+  border-radius: ;
+}
+
+.rounded-\[25px\] {
+  border-radius: 25px;
+}
+
+.rounded-\[30px\] {
+  border-radius: 30px;
+}
+
 .bg-\[\#3865A7\] {
   --tw-bg-opacity: 1;
   background-color: rgb(56 101 167 / var(--tw-bg-opacity));
@@ -856,8 +996,40 @@ video {
   background-image: url('./src/images/bg1.png');
 }
 
+.bg-\[url\(\'\.\/src\/icons\/\.svg\'\)\] {
+  background-image: url('./src/icons/.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\/de\.svg\'\)\] {
+  background-image: url('./src/icons/de.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\/d\.svg\'\)\] {
+  background-image: url('./src/icons/d.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\/dec\.svg\'\)\] {
+  background-image: url('./src/icons/dec.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\.svg\'\)\] {
+  background-image: url('./src/icons.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\/decor1\.svg\.svg\'\)\] {
+  background-image: url('./src/icons/decor1.svg.svg');
+}
+
+.bg-\[url\(\'\.\/src\/icons\/decor1\.svg\'\)\] {
+  background-image: url('./src/icons/decor1.svg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-contain {
+  background-size: contain;
 }
 
 .bg-center {

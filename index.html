@@ -90,16 +90,21 @@
         <h2 class="section-title text-[40px]"> Истории успеха </h2>
         <img src="./src/icons/Vector.svg" alt="Icon">
       </div>
-      <div >
+      <div class="flex justify-center items-center flex-col gap-3 ">
         <div class="flex justify-center items-center gap-3 ">
           <div>
-            картинка с декором
+            <div class="relative bg-center bg-[url('./src/icons/decor1.svg')] bg-contain bg-center bg-no-repeat w-[251px] h-[240px]">
+              <img class="absolute left-[5px] top-8 max-w-[211px] max-h-[236px]" src="./src/icons/foto1.png" alt="Icon" />
+              <img class="absolute right-5 bottom-[50px]" src="./src/icons/decor11.svg" alt="Icon" />
+              <img class="absolute left-[100px] top-[9px]" src="./src/icons/decor111.svg" alt="Icon" />
+              
+            </div>
           </div>
           <div class="max-w-xl">
             <h3 class="mb-[22px]">Пекарня "Русские традиции"</h3>
             <p class="mb-[15px]">Как говорит сам Владимир: «мне хотелось, чтобы все узнали, что такое русская кухня», «обьяснить, что она жива».</p>
             <p class="mb-[17px]">Чтобы мини-пекарня стала рентабельным бизнесом, необходимы строгие расчеты, учет рисков и перспектив, анализ рынка, налаживание сбыта. </p>
-            <button class="flex items-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-3xl">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
+            <button class="flex items-center gap-3 text-sm text-white bg-[#3865A7] py-[11px] px-6 rounded-[30px]">Читать историю <img src="./src/icons/arrow.svg" alt=""></button>
           </div>
         </div>
       </div>
@@ -114,8 +119,8 @@
         <li><a href="#">Защита бизнеса</a></li>
       </ul>
       <ul class="flex gap-3">
-        <li><a href="#">service@in-line.ru</a></li>
-        <li><a href="#"> 8-800-200-74-30</a></li>
+        <li><a href="mailto:service@in-line.ru">service@in-line.ru</a></li>
+        <li><a href="tel:88002007430">8-800-200-74-30</a></li>
       </ul>
     </div>
   </footer>

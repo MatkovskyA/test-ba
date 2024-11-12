@@ -24,6 +24,10 @@ body {
   font-family: 'circe-bold', sans-serif;
 }
 
+.text-regular {
+  font-family: 'circe', sans-serif;
+}
+
 button {
   font-family: 'circe', sans-serif;
 }
